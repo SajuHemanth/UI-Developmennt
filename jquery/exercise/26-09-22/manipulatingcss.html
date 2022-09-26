@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".sample").addClass("adding colour");
+            });
+        });
+            </script>
+    
+    <style>
+        .adding {
+            font-weight: bold;
+            font-size:xx-large;
+        }
+        .colour {
+            color: brown;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="sample">color changes to this tag</div>
+       <div class="sample2" >no changes in this</div>
+        <br>
+        <button>click</button>
+    </body>
+</html>

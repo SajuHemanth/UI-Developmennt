@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+         var text = "";
+         text += "Width is: " + $("#sample").width() + "</br>";
+         text += "Height is: " + $("#sample").height();
+         $("#sample").html(text);
+  });
+});
+</script>
+<style>
+#sample {
+  color: azure;
+  height: 100px;
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid rgb(15, 222, 118);
+  background-color: rgb(7, 8, 8);
+}
+</style>
+</head>
+<body>
+
+<div id="sample"></div>
+<br>
+
+<button>click</button>
+
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>
