@@ -1,0 +1,65 @@
+﻿                                  USER MANUAL
+Welcome:
+
+     The flight tool is the online booking tool containing everything you need to book a flight, simply and quickly. 
+The flight tool offers a number of key features and benefits: 
+• Simple and user-friendly, providing an intuitive user experience 
+• Easy to save money - Every ticket price is displayed for you to compare, and our built-in travel policy compliance helps to keep your booking within the guidance of your company travel policy. 
+
+
+Getting started 
+
+      To get started, login to your online travel portal with required EmailId and password.
+      If you are already a Exsisting User for this portal,you will be directly allowed to access for further steps to proceed for booking.If your MailId is not registered with this portal,you are considered as a new user for this portal and you will redirected to new registeration(Step 1) field there you should provide the user details in the required format,this will then direct you to the further steps of the online booking process - booking a flight,the basics. 
+
+
+Step 1: 
+Planning your journey Search :
+        To start your search for flights, complete all the required details on the home page or through the ‘book’ tab. 
+Completing all the fields will provide more accurate search results. 
+You can use a more detailed search function if required, just click on ‘Detailed Search’. 
+Once you are happy with your requirements, hit the ‘Search’ button.
+
+
+Step 2: 
+Search results:
+       Your search results will display in what is called ‘single view’, displaying the available flights, but as a one-way fares for both your outbound and inbound journey, remember to select both.
+
+
+Step 3: 
+Choosing your seats:
+      Depending on the type of your ticket you may be able to request a specific seat on the aircraft. Please click the ‘Seat(s)’ button, this will take you to a seat map for the aircraft you are travelling on. 
+Simply select an unoccupied seat that takes your fancy and select ‘save’.
+
+Step 4: 
+Confirming your booking :
+    You can view more detailed information about your journey such as; airport location, airport terminal, aircraft type and more by clicking the view details link. 
+Before you can complete your booking you will need to agree to the terms and conditions. 
+If your company setup allows you to book car hire through this tool, you can do this at this stage in the process. 
+More information about booking car hire is available in the car hire section of this guide. 
+Once you are satisfied with the itinerary click ‘Finalise Trip’.
+
+
+Step 5: 
+Journey summary :
+   In this next step you will be asked for some important information about this particular journey such as; Trip name, Trip reason and some further information about who is travelling.
+
+
+
+View, modify or cancel a journey :
+       From time to time you may need to view, modify or cancel a journey. 
+This can be done by selecting the ‘Review’ tab from the main menu. 
+View and/or modify a journey Select which journey you wish to view or modify then select ‘Display’. Details about that particular journey will show along with the options available, such as modify.
+
+
+Cancelling a journey :
+          Accessed the same way as view/modify, select which journey you wish to cancel/delete then select ‘Display’. 
+Details about that particular journey will show along with the options available, such as cancel/delete. I
+f you are sure you want to cancel the chosen trip, select ‘Delete trip’, you will be asked to confirm this, but after that, your trip is cancelled. 
+
+Please note: Journeys can only be modified or cancelled prior to the tickets being issued.
+
+Support :
+       Whilst there are online help points throughout the flight tool, we understand that it’s often easier to speak to us. 
+You can call our online support team using the details below, or drop them an email. 
+------------------------------------------------------------------------------------------------------------------------

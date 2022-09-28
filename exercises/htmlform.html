@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <form action="https://www.aspiresys.com/">
+            <div align = "center">
+                
+                <fieldset>
+                    <h1>Aspire Systems-Survery Form </h1>
+                    <label>Enter your name:</label>
+                    <input type="text" name="UserName" size=30 maxlength=35 value=""
+                    placeholder="Please enter your name">
+                </br></br>
+                <label>Enter your ACE number:</label>
+                <input type="text" name="Ace Number" size=30 maxlength=35 value=""
+                placeholder="Please enter your ACE number">
+                </br></br>
+            <label>A quick intro about yourself:</label>
+        <textarea name="Comments" cols=30 rows=4 
+        placeholder="About yourself"></textarea> 
+    </br></br>
+    <label>Are you a fresher in this organisation:</label>
+        <input type="radio" name="exe" value=1>Yes
+        <input type="radio" name="exe" value=2>No
+
+    </br></br>
+        <label>In Which practice you are currently working on:</label>
+        <input type="checkbox" name="LAMP">LAMP
+        <input type="checkbox" name="BFS">BFS 
+        <input type="checkbox" name=".NET">.NET
+        <input type="checkbox" name="SAT">SAT
+</br></br>
+Stack Name:
+<select name="Stackname" ><option>
+    <option value=1 selected = "true">MEAN
+    <option value=2 >MERN
+    <option value=3 >PHP
+    <option value=4 >PYTHON
+    <option value=5 >PERL
+    </select>
+</br></br>
+<input type=submit value="Submit form">
+</div>
+            </fieldset>
+        </form>
+    </body>
+</html>

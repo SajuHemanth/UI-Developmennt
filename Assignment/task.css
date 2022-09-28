@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: aliceblue;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+/* .main {
+    background-image: url("utopic.jpeg");
+    background-color: #494848;;
+    /* width: 100%; */
+    /* margin: center; */
+
+    .Text {
+        
+        width: 100%;
+        min-height: 100px;
+        background-color: #ebebea;
+        display: block;
+    }
+    
+    .Text p {
+        width: 70%;
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+        margin: auto;
+        padding: 25px 0;
+    
+    }
+    
+    .Text p::before {
+        content: open-quote;
+    }
+    
+    .Text p::after {
+        content: close-quote;
+    }
+    
+    .image-block {
+        height: 380px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border: 0;
+    }
+    
+    .image-block img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 900px;
+        max-height: 380px;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .opac {
+        background-color: #773737;
+        opacity: 0.5;
+        width: 40%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+    
+    .opac p {
+        width: 80%;
+        margin: auto auto;
+        font-size: 18px;
+        font-style: italic;
+        color: #f6f3f3;
+        padding: 25px 0;
+    }
+    @media (min-width: 1020px) {
+        .mediaquery
+        {
+            display: inline;
+        }
+    
+        .media {
+            display: inline-block;
+            width: 30%;
+            position: relative;
+            margin: 50px 10px;
+        }
+    
+    
+    
+    }
+    
+    @media (max-width:  1000px) and (min-width: 500px)
+    {
+        .mediaquery
+        {
+            width : 100%;
+            text-align : left;
+        }
+    
+        .media {
+            display: block;
+            width: 40%;
+            position: relative;
+            margin: 50px auto 20px auto;
+            padding : 0;
+        }
+    
+    }
+    @media (max-width: 700px)
+    {
+        .mediaquery
+        {
+            width : 100%;
+            text-align : center;
+        }
+    
+        .media {
+            display: block;
+            width: 80%;
+            position: relative;
+            margin: auto;
+            /* padding : 0; */
+        }
+    }
+    .image, .body {
+         display: table-cell;
+    }
+    
+    .image {
+        padding-right: 20px;
+    }
+    
+    .image img {
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .body {
+        width: 100%;
+    }
+    
+    .body .title {
+        color: rgb(203, 17, 203);
+        font-size: 25px;
+        margin: 30px auto;
+    }
+    
+    .body p {
+        /* top:10px; */
+        color: #3c3b3b;
+        font-size: 20px;
+    }
+    .lastmedia
+{
+    min-height: 425px;
+    width : 100%;
+    background-color : #ebebea;
+    display : table;
+    text-align : center;
+}
+
+
+
+@media (min-width: 1160px)
+{
+    .imgmedia
+    {
+        width : 400px;
+        min-height: 350px;
+        background-color : white;
+        vertical-align: middle;
+        display : inline-block;
+    }
+    
+    .main
+    {
+        width : 30%;
+        margin : 35px 20px;
+        display : inline-block;
+        
+        
+    }
+
+}
+
+@media (max-width: 1120px)
+{
+    .imgmedia
+    {
+        min-width : 340px;
+        min-height: 325px;
+        background-color : white;
+        display : block;
+    }
+    .main
+    {
+        text-align: center;
+        width: 30%;
+        margin : 50px auto;
+    }
+}
+
+.imgmedia img
+{
+
+    padding : 15px;
+    width : 85%;
+    height : 180px;
+}
+
+.imgmedia span
+{
+    color: #894aa3;
+    font-size: 20px;
+    margin: 30px auto;
+}
+
+.imgmedia p
+{
+    padding : 10px;
+}
+
+.footerWrapper
+{
+    width : 100%;
+}
+
+
+
+@media 
+{
+
+    .footerWrapper .footer
+    {
+        width : 100%;
+        background-color :white;
+        text-align: left;
+    }
+    .footerWrapper .footer .footerPart
+    {
+        margin: 50px 25px;
+        width : 20%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+}
+
+@media (max-width :0 )
+{
+    .footerWrapper .footer
+    {
+        width : 100%;
+        /* min-height: 290px; */
+        background-color : rgb(233, 228, 228);
+        text-align: center;
+    }
+    .footerWrapper .footer .footerPart
+    {
+        margin: 40px 15px;
+        width : 45%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+}
+
+
+.footerPart span.title
+{
+    
+    font-size: 20px;
+    color : #666666;
+    padding-left: 10px;
+    display : block;
+    margin-bottom: 35px;
+}
+
+.footerPart p
+{
+    color: #999999;
+    font-size : 16px;
+    margin-left : 10px 0 10px 0;
+    
+}
+
+.footerPart .link
+{
+    padding :10px;
+    border-bottom: 1px solid transparent;
+    display : block;
+    
+}
+
+.footerPart span.nextTitle
+{
+    font-size : 20px;
+    font-weight: bold;
+    color : rgb(122, 121, 121);
+    margin-left : 10px;
+    display : block;
+}
+
+.footerPart span.lastTitle
+{
+    color: #999999;
+    font-size : 15px;
+    margin-left : 10px;
+    display : block;
+}
+
+
+.footerPart .newsText
+{
+    margin : 10px 0 0 10px;
+    border : 0;
+    background-color : #ebebea;
+    width : 90%;
+    height : 30px;
+    font-size : 20px;
+    display: block;
+    color : black;
+}
+
+.footerPart .Button
+{
+    height : 10px;
+    color : rgb(79, 44, 94);
+    background-color : white;
+    border : 0;
+    margin : 10px;
+    font-size : 20px;
+    font-weight : bold;
+}
+footer {
+    background-color: rgb(118, 115, 115);
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+footer span.left {
+    margin-right :500px; ;
+}
+footer span.right {
+    margin-left :400px; ;
+}
