@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard Page</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="./js/calendar.min.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+   
+    </head>
+    <body style="background-color: white;" >
+        <header>
+            <div class="sidebar-logo d-inline">
+                <img src="./images/assets/Group 65.svg"/>
+
+            </div>
+            <h2 class="d-inline" style="margin:0 10px">
+                <label for="">
+                    <img src="./images/assets/Group 8287.svg"/>
+                </label>
+                </h2>
+            <div class="search-wrapper " style="display: inline-block;margin:0 10px;" >
+                <img style="display: inline;"  src="./images/assets/Path 4.svg"/>
+                <input style="display: inline;" type="search" placeholder="search here" />
+            </div> 
+            <div class="user-wrapper" style="float: right;">
+                <img src="./images/assets/Path 47.svg"/>
+                <!-- <img src="./images/assets/Group 1.svg"> -->
+                <div class="avatar">
+                    <img src="./images/assets/Group 1.svg"/>
+                    <div class="dot"></div>
+                </div>
+                <img src="./images/assets/Ellipse 1@2x.png" width="40px" height="40px" alt=""  >
+                <div>
+                    <h4>David Miller</h4>
+                    <small>Admission Staff</small>
+                </div>              
+            </div>          
+        </header>
+       
+        <aside class="sidebar">
+            <div class="dropdown">
+            <div class="sidebar-menu">
+                <ul class="menu-list">
+                    <li class="drop-list"> 
+                        <!-- <div class="main-menu" style="margin: 10px; ">
+                           
+                            <p style="display: inline-block;font-size: 16px;padding:10px 0px;">Dashboard</p> 
+                            
+                             <div style="display: inline; float:right;">
+                                <img src="./images/assets/Path 20120.svg" alt=""/>
+                            </div>  -->
+                        <!-- </div> -->
+                        <!-- <ul class="sub-menu"> 
+                            <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9077.svg"/> Total Enquiries</a></li>
+                            <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9078.svg"/> Conversion Rate</a></li>
+                            <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9078.svg"/> Conversion Rate</a></li>
+                            <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9079.svg"/> Schedules</a></li>
+                            <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9081.svg"/> Enquiries by status</a></li>
+                            <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9080.svg"/> Calender</a></li>
+                        </ul> -->
+
+  <div>
+     <img src="./images/assets/Group 11.svg" alt="image" /> </div>
+    <button class="dropdown-btn" style="display: inline-block;font-size: 16px; margin-left: 0px;">Dashboard 
+        <div style="display: inline; float:right; margin-right: 40px;">
+            <img src="./images/assets/Path 20120.svg" alt=""/></div>
+    <i class="fa fa-caret-down"></i>
+  </button>
+  
+  <div class="dropdown-container">
+    <ul class="sub-menu"> 
+        <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9077.svg"/> Total Enquiries</a></li>
+        <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9078.svg"/> Conversion Rate</a></li>
+        <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9078.svg"/> Conversion Rate</a></li>
+        <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9079.svg"/> Schedules</a></li>
+        <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9081.svg"/> Enquiries by status</a></li>
+        <li style="margin-left:30px ;"><a style="font-size: 15px;" href="#"><img src="./images/assets/Group 9080.svg"/> Calender</a></li>
+    </ul>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+        </div>
+    <!-- </li> -->
+                    <li>
+                            <div class="main-menu" style="margin: 10px;">
+                                <img src="./images/assets/Group 8202.svg" alt="image" style="margin: 0px 0px 0px 0px;"/> 
+                                <p style="display: inline-block;font-size: 16px;padding:10px 0px;">Enquiries</p> 
+                                 <div style="display: inline; float:right;margin:0px 0px 0px 0px;">
+                                    <img src="./images/assets/Path 20120.svg" alt=""/>
+                                </div> 
+                            </div>
+                    </li>
+                    <li>
+                        <div class="main-menu" style="margin: 10px;">
+                            <img src="./images/assets/Group 8187.svg" alt="image" style="margin: 0px 0px 0px 0px;"/> 
+                            <p style="display: inline-block;font-size: 16px;padding:10px 0px;">Enrollment</p> 
+                             <div style="display: inline; float:right;">
+                                <img src="./images/assets/Path 20120.svg" alt=""/>
+                            </div> 
+                        </div>
+                    </li>
+                    <li>
+
+                        <div class="main-menu" style="margin: 10px;">
+                            <img src="./images/assets/Path 9482.svg" alt="image" style="margin: 0px 0px 0px 0px;"/> 
+                            <p style="display: inline-block;font-size: 16px;padding:10px 0px;">Admission</p> 
+                             <div style="display: inline; float:right;">
+                                <img src="./images/assets/Path 20120.svg" alt=""/>
+                            </div> 
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-menu" style="margin: 10px;">
+                            <img src="./images/assets/Group 18.svg" alt="image" style="margin: 0px 0px 0px 0px;"/> 
+                            <p style="display: inline-block;font-size: 16px;padding:10px 0px;">Settings</p> 
+                             <div style="display: inline; float:right;">
+                                <img src="./images/assets/Path 20120.svg" alt=""/>
+                            </div> 
+                        </div>
+                    </li>
+                    <li>
+
+                        <div class="main-menu" style="margin: 10px;">
+                            <img src="./images/assets/Path 21.svg" alt="image" style="margin: 0px 0px 0px 0px;"/> 
+                            <p style="display: inline-block;font-size: 16px;padding:10px 0px;">Help</p> 
+                             <div style="display: inline; float:right;">
+                                <img src="./images/assets/Path 20120.svg" alt=""/>
+                            </div> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        
+        <div class="main-content" style="margin-top: 15px;">
+            
+            <div >
+                <h5 class="font-left" >Dashboard</h5>
+              <h5 class="font-right">Last Login:29 sep 10:45AM</h5>
+            </div>
+            <main>
+                <div class="cards">
+                <div class="class-box" >
+                    <div class="card-first" style="display: inline;float: right;" >
+
+                        <span>Total Enquiries</span>
+                        <h1>267</h1>
+                    </div>
+                    <div class="card-image">
+                        <img  src="./images/assets/Group 8298.svg"/>
+                    </div>
+                </div>
+                <div class="class-box">
+                    <div class="card-first" style="display: inline;float: right;">
+
+                        <span>Open</span>
+                        <h1>135</h1>
+                    </div>
+                    <div class="card-image">
+                        <img src="./images/assets/Group 8306.svg"/>
+                    </div>
+                </div>
+                <div class="class-box">
+
+                    <div class="card-first" style="display: inline;float: right;">
+                
+                        <span>Re-Open</span>
+                        <h1>87</h1>
+                    </div>
+                    <div class="card-image">
+                        <img src="./images/assets/Group 8311.svg"/>
+                    </div>
+                </div>
+
+                <div class="class-box">
+                    <div class="card-first" style="display: inline;float: right;">
+            
+                        <span>Closed</span>
+                        <h1>45</h1>
+                    </div>
+                    <div class="card-image">
+                        <img src="./images/assets/Group 8313.svg"/>
+                    </div>
+                </div>
+            </div>
+                <div class="display-right" style=" width: 400px;">
+                    <div style=" display: inline-block;width: 400px;">
+                        <img src="./images/assets/Component 27 – 11.svg" style="display: inline; float: right;margin-top: 10px;" />
+
+                        <h3 class="font-title" >Enquiries by Rate</h3>
+                        <h5 class="font-last" >Last 6months</h5>
+                        <!-- <img style="display: inline;" src="./images/assets/Component 27 – 11.svg"/> -->
+                    </div>
+                    <div>
+                        <img style="width: 390px;" src="./images/assets/status.png"/>
+
+                    </div>
+                </div>  
+                
+                <div  style="display: inline-block;width: 850px;" >
+                    <img src="./images/assets/Component 27 – 11.svg" style="display: inline; float: right;margin-top: 10px;" />
+                    <h3 class="font-title"  >Enquiries Conversion Rate</h3>
+                    
+                    <h5 class="font-last"  >Last 6months</h5>
+                    <img src="./images/assets/chart.png">
+                </div>  
+                        <!-- <img src="./images/assets/chart.png"> -->
+                <div style="display:inline-block ; margin:10px 20px;width: 800px;padding: 5px;" >
+                    <h3 style="display: inline;">Schedule</h3>
+                    <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px 10px 10px 400px;border-radius: 50px;" > Followup</span>
+                    <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px;" > Virtual tour</span>
+                    <span ><img style="display: inline;float: right;" src="./images/assets/Component 27 – 11.svg"/></span>
+                </div>
+                    <table id="example" class="display nowrap" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Enquiry ID</th>
+                                <th>Name</th>
+                                <th>Source</th>
+                                <th>Lead Status</th>
+                                <th>Follow-up Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902000</td>
+                                <td>Abdul</td>
+                                <td>Email</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color:greenyellow;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> Active</span>  <br>
+                                    <span ><img src="./images/assets/Path 9451.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">scheduled today</span>  </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902001</td>
+                                <td>Bala</td>
+                                <td>Website</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: red;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> In-active</span>  <br>
+                                    <span ><img src="./images/assets/Path 48.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">Information not delivered</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902002</td>
+                                <td>Chandru</td>
+                                <td>Online</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: greenyellow;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> Active</span>  <br>
+                                    <span ><img src="./images/assets/Path 9451.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">scheduled tomorrow</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902003</td>
+                                <td>Deva</td>
+                                <td>Email</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: red;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> In-active</span>  <br>
+                                    <span ><img src="./images/assets/Path 49.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">Cancelled the appointment</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902004</td>
+                                <td>Eshwar</td>
+                                <td>Online</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: greenyellow;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> Active</span>  <br>
+                                    <span ><img src="./images/assets/Path 48.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">scheduled tomorrow</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902005</td>
+                                <td>Fahad</td>
+                                <td>Website</td><td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: red;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> In-active</span>  <br>
+                                    <span ><img src="./images/assets/Path 9451.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">cancelled the appointment</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902006</td>
+                                <td>Gowtham</td>
+                                <td>Email</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: red;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> In-active</span>  <br>
+                                    <span ><img src="./images/assets/Path 49.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">Information not delivered</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902007</td>
+                                <td>Harish</td>
+                                <td>Email</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: greenyellow;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> Active</span>  <br>
+                                    <span ><img src="./images/assets/Path 48.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">scheduled on tomorrow</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902008</td>
+                                <td>Iyyanar</td>
+                                <td>Online</td>
+                                <td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: red;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> In-active</span>  <br>
+                                    <span ><img src="./images/assets/Path 9451.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">Information not available</span>  </td>
+                            </tr>
+                            <tr>
+                                <td style="color:rgb(137, 137, 226)">ENQ12307902009</td>
+                                <td>Jackson</td>
+                                <td>Email</td><td> <span style="background-color:rgb(246, 246, 250);color:rgb(137, 137, 226);border:1px solid blue;padding:5px 10px;margin:10px;border-radius: 50px" > Followup-progress</span></td>
+                                <td> <span> <span style="background-color: red;width:10px;height:10px;border-radius: 50%;
+                                    display: inline-block;" ></span> In-active</span>  <br>
+                                    <span ><img src="./images/assets/Path 9451.svg" style="background-color: gray;display: inline-block;width: 12px;height: 12px;"  alt=""></span>
+                                    <span style="color: #999999;font-size :small;">cancelled the appointment</span>  </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <section class="myCalendar">
+                        
+                          <div class="hbContainer">
+                        
+                            <div class="calendarYearMonth center">
+                        
+                              <p class="left calBtn" onclick="prevMonth()"> Prev </p>
+                        
+                              <p id="yearMonth"> Jan 2021 </p>
+                        
+                              <p class="right calBtn" onclick="nextMonth()"> Next </p>
+                        
+                            </div>
+                        
+                            <div>
+                        
+                              <ol class="calendarList1">
+                        
+                                <li class="day-name">Sat</li>
+                        
+                                <li class="day-name">Sun</li>
+                        
+                                <li class="day-name">Mon</li>
+                        
+                                <li class="day-name">Tue</li>
+                        
+                                <li class="day-name">Wed</li>
+                        
+                                <li class="day-name">Thu</li>
+                        
+                                <li class="day-name">Fri</li>
+                        
+                              </ol>
+                        
+                              <ol class="calendarList2" id="calendarList">
+                        
+                              </ol>
+                        
+                            </div>
+                        
+                          </div>
+                        
+                        </section>
+                        
+                </div>
+                </div>
+                
+                <footer>
+                    <p>	&copy;2022,<b>GEMS</b>,All Rights Recived</p>
+                </footer>      
+            </main>
+        </div>
+    </body>
+</html>
